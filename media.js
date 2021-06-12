@@ -103,14 +103,14 @@ playBtn.addEventListener("click",function(){
 recordingDBObj.addEventListener("upgradeneeded",function(){
     recordingDB=recordingDBObj.result;
     recordingDB.createObjectStore("recordings",{keyPath:"rId"});
-    alert("upgradeneeded");
+   // alert("upgradeneeded");
 });
 recordingDBObj.addEventListener("success",function(){
     recordingDB=recordingDBObj.result;
   //  alert("success");
 });
 recordingDBObj.addEventListener("error",function(){
-    alert("error");
+  //  alert("error");
 });
 console.log(boardName);
 function addRecordingToDb(name,audioblob,videoblob){
