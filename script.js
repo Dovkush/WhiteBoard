@@ -99,6 +99,8 @@ pencil.addEventListener("click",function(){//this will display the options of pe
       eraserOptions.style.display="none";
   }else{
     if(penFlag==false){
+      uploadimgFlag=false;
+      document.querySelector(".imageoptions").style.display="none";
         penOptions.style.display="block";
        }else{
         penOptions.style.display="none";
@@ -203,9 +205,9 @@ for(let i=0;i<colors.length;i++){
 ticket.addEventListener("click",createTicket);
 //create ticket and upload image on it
 imageOpns.addEventListener("click",function(){
+  document.querySelector(".pen-options").style.display="none";
     if(uploadimgFlag==false){
-     
-      document.querySelector(".pen-options").style.display="none";
+    penFlag=false;
       imageOpnsContainer.style.display="block";
     }else{
       imageOpnsContainer.style.display="none";
