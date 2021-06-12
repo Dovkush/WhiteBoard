@@ -204,6 +204,8 @@ ticket.addEventListener("click",createTicket);
 //create ticket and upload image on it
 imageOpns.addEventListener("click",function(){
     if(uploadimgFlag==false){
+     
+      document.querySelector(".pen-options").style.display="none";
       imageOpnsContainer.style.display="block";
     }else{
       imageOpnsContainer.style.display="none";
