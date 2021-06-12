@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video class ="livestream" src=""  autoplay></video>
+    <div class="recordingDBcontainer">
+        <button class="back">
+            <i class="fas fa-arrow-circle-left icon backicon"></i>
+        </button>
+        <div class="heading">
+            Recordings
+        </div>
+      </div>
+    
+    <div class="upper">
+        <div class="boardname">Board Name</div>
+        <button class="database"> 
+            <i class="fas fa-database icon"></i>
+        </button>
+    </div>
+    
+    <div class="modal">
+        <div class="modalhead"></div>
+        <div class="entertext">Enter Board Name :-</div>
+        <div class="boardnameinput">
+            <input type="text" class="inputboard">
+         </div>
+         <div class="okbtn">
+        <button class="ok">Ok</button>
+         </div>   
+        
+    </div>
+    <div class="cameracontainer" style="height: 100vh; width: 100vw; display: none; background-color: black;"><video class="screenshotvid"style="height: 100%; width :100%" controls autoplay>
+    </video><button class="click">click</button></div>
+   
+    <div class="main">
+        
+   
+      <div class="recordingContainer">
+          <div class="recording">
+            <video class="recordedvideo"  ></video>
+            <audio src="" class="audio" style="display: none;"></audio>
+          </div>
+        <div class="videooptions">
+         <i class="fas fa-play icon recordicons recordplay"></i>
+       <!--<i class="fas fa-pause icon"></i>-->  
+         <i class="fas fa-download icon recordicons recorddownload"></i>
+         <i class="fas fa-save icon recordicons recordsave"></i>
+         <i class="fas fa-trash-alt icon recordicons recordsave discard"></i>
+        </div>
+       </div>
+      
+       <div class="media_container">
+         
+        
+           <button class="record ">
+             <div class="round-btn "></div>
+           </button>
+       </div>
+<div class="tool-bar">
+        <div class="action-btn active">
+            <i class="fas fa-pen icon pencil"></i>
+            <div class="pen-options">
+                <i class="fas fa-circle iconcircle"></i>
+                <div class="thickness">
+                    <i class="fas fa-circle" size="2" style="font-size:x-small;"></i>
+                    <i class="fas fa-circle" size="4" style="font-size:small;"></i>
+                    <i class="fas fa-circle" size="6" style="font-size: medium;"></i>
+                    <i class="fas fa-circle" size="10" style="font-size: large;"></i>
+                    <i class="fas fa-circle" size="14" style="font-size: x-large;"></i>
+                    <i class="fas fa-circle" size="20" style="font-size: xx-large;"></i>
+                    <i class="fas fa-circle" size="25" style="font-size: xxx-large;"></i>
+                </div>
+                <i class="fas fa-pencil-alt red color" style="color: red;"></i>
+                <i class="fas fa-pencil-alt blue color" style="color:blue;"></i>
+                <i class="fas fa-pencil-alt green color" style="color:green;"></i>
+                <i class="fas fa-pencil-alt yellow color" style="color:yellow;"></i>
+            </div>
+        </div>
+        <div class="thicknesseraser">
+            <i class="fas fa-eraser" size="2" style="font-size:x-small;"></i>
+            <i class="fas fa-eraser" size="4" style="font-size:small;"></i>
+            <i class="fas fa-eraser" size="6" style="font-size: medium;"></i>
+            <i class="fas fa-eraser" size="10" style="font-size: large;"></i>
+            <i class="fas fa-eraser" size="14" style="font-size: x-large;"></i>
+            <i class="fas fa-eraser" size="20" style="font-size: xx-large;"></i>
+            <i class="fas fa-eraser" size="25" style="font-size: xxx-large;"></i>
+        </div>
+        <div class="eraser action-btn"><i class="fas fa-eraser icon"></i>
+        </div>
+        <div class="ticket action-btn">
+            <i class="fas fa-list-alt icon"></i>
+        </div>
+        <div class="upload-image action-btn">
+            <div class="imageoptions">
+                <i class="fas fa-camera icon camera" style="color:#2980b9;"></i>
+                <i class="fas fa-image icon picture" style="color: #6ab04c;"></i>
+                <i class="fas fa-photo-video icon screenshot" style="color:#ffcccc"></i>
+            </div>
+            <i class="fas fa-copy icon"></i>
+        </div>
+        <div class="line action-btn">
+            <i class="fas fa-grip-lines-vertical icon"></i>
+        </div>
+        <div class="download action-btn">
+            <i class="fas fa-download icon"></i>
+        </div>
+        <div class="zoomin action-btn">
+            <i class="fas fa-search-plus icon"></i>
+        </div>
+        <div class="zoomout action-btn">
+            <i class="fas fa-search-minus icon"></i>
+        </div>
+        <div class="undo action-btn">
+            <i class="fas fa-undo icon"></i>
+        </div>
+        <div class="do  action-btn">
+            <i class="fas fa-redo icon"></i></i>
+        </div>
+        <div class="fullscreen action-btn">
+            <i class="fas fa-expand icon"></i>
+        </div>
+        <div class="livecamera action-btn">
+            <i class="fas fa-video icon"></i>
+           </div>
+    </div>
+
+   <!--
+       <div class="ticket-container">
+      <div class="head">
+            <button class="hide ticket-btn">
+                <i class="fas fa-minus-circle"></i>
+            </button>
+           <button class="delete ticket-btn">
+               <i class="fas fa-minus-circle"></i>
+           </button>
+        
+        </div>
+        <div class="ticket-data">
+        <img src="" alt="">
+        </div>
+    </div>
+   --> 
+<div class="board">
+    <canvas class="canvas-board" style="cursor: crosshair; z-index: 10; "></canvas>
+</div>
+   
+</div>
+   
+    <script src="script.js"></script>
+    <script src="zoom.js"></script>
+    <script src="redo_undo.js"></script>
+    <script src="media.js"></script>
+    <script src="fullscreen.js"></script>
+   
+</body>
+
+</html>
